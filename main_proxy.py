@@ -301,8 +301,8 @@ class InstagramScraperApp(MDApp):
 
         options = {
             'proxy': {
-                'http': 'http://spbuc48dow:SyHm8hxl1p7vKuO2qm@gate.smartproxy.com:7000',
-                'https': 'https://spbuc48dow:SyHm8hxl1p7vKuO2qm@gate.smartproxy.com:7000',
+                'http': 'http://',
+                'https': 'https://',
                 'no_proxy': 'localhost,127.0.0.1'
             },
             'request_storage_base_dir': os.path.join(os.getcwd(), "selenium_wire")
@@ -371,8 +371,8 @@ class InstagramScraperApp(MDApp):
         })
 
         session.proxies.update({
-            'http': 'http://spbuc48dow:SyHm8hxl1p7vKuO2qm@gate.smartproxy.com:7000',
-            'https': 'https://spbuc48dow:SyHm8hxl1p7vKuO2qm@gate.smartproxy.com:7000',
+            'http': 'http://',
+            'https': 'https://',
         })
 
         # show the spinner while code ececuted
