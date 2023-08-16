@@ -171,7 +171,7 @@ To get started with the Instagram Scraper Application, simply run the script, an
 
 
 ## Final thought, Deployment strategy and Real-world Application of the project:
-The Project, at its core, leverages the Selenium ChromeDriver for web scraping. This enable it to programmatically interact with web pages, specifically Instagram in this context, to extract valuable data. A viable forward would be to package the application as a standlone `.exe` file, offering a simplified transition from developmental code to a tangible application. Furthermore, This can be ensures that even non-tech-savvy users can easily install and run the application without needing to deal with complex setups. By converting to `.exe` format, the application can be transformed into a robust, user-friendly tool that can be effectively implemented in real world scenarios, catering to a variety of users, from marketers and researchers to curious individuals.
+The Project, at its core, leverages the Selenium ChromeDriver for web scraping. This enable it to programmatically interact with web pages, specifically Instagram in this context, to extract valuable data. A viable forward would be to package the application as a standlone `.exe` file, offering a simplified transition from developmental code to a tangible application. Furthermore, This can be ensures that even non-tech-savvy users can easily install and run the application without needing to deal with complex setups.
 
 
 ## Reference
