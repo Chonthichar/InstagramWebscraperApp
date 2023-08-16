@@ -15,7 +15,7 @@ To get started with the Instagram Scraper Application, simply run the script, an
 
 ### Install packages:
 - Installing from source
-  `https://github.com/Chonthichar/InstagramWebscraperLastVersion.git`
+  `https://github.com/Chonthichar/https://github.com/Chonthichar/InstagramWebscraperApp.git`
   
 - Installing Kivy
   `pip install kivy`
