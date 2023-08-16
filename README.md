@@ -161,6 +161,9 @@ However, the JSON response from this query only allows scraping of 12 posts. To 
 
 <img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
+## Final thought, Deployment strategy and Real-world Application of the project:
+The Project, at its core, leverages the Selenium ChromeDriver for web scraping. This enable it to programmatically interact with web pages, specifically Instagram in this context, to extract valuable data. A viable forward would be to package the application as a standlone `.exe` file, offering a simplified transition from developmental code to a tangible application. Furthermore, This can be ensures that even non-tech-savvy users can easily install and run the application without needing to deal with complex setups. By converting to `.exe` format, the application can be transformed into a robust, user-friendly tool that can be effectively implemented in real world scenarios, catering to a variety of users, from marketers and researchers to curious individuals.
+
 
 ## Reference
 Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
