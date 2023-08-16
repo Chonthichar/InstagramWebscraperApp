@@ -46,16 +46,6 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 6. Click the "start_button" to begin the scraping process.
 7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
-
-<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Execute the command within your Python environment. A KivyMD window will appear on your display" title="Execute the command within your Python environmen" style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-<img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the 'username_input' field" title="Input the instagram username you want to scrape in the 'username_input' field" style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-<img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-
-
-
 ## main.py (Extract Data without using Proxy)
 
 ### Code Structure:
@@ -149,8 +139,6 @@ We then iteratively made request to the API, continuing our scraping until we co
 
 
 ## main_proxy.py (Extract Data using Proxy)
-
-### Overview
 'main_proxy.py' allows for the extraction of Instagram data with the added benefit of using proxies. The implementation is much the same as
 'main.py', but with proxy support for better privacy and to counter potential blocking by Instagram.
 
@@ -162,6 +150,15 @@ We then iteratively made request to the API, continuing our scraping until we co
 1. Performance: Using a proxy might slow down the execution time compared to 'main.py'.
 2. Proxy implementation: The proxy is integrated at three key points where requests are made to Instagram.
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
+
+
+Example of the output :
+
+<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Execute the command within your Python environment. A KivyMD window will appear on your display" title="Execute the command within your Python environmen" style="display: inline-block; margin: 0 auto; max-width: 200px">
+
+<img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the 'username_input' field" title="Input the instagram username you want to scrape in the 'username_input' field" style="display: inline-block; margin: 0 auto; max-width: 200px">
+
+<img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
 ## Reference
 Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
