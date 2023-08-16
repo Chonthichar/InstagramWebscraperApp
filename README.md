@@ -1,6 +1,6 @@
 # InstagramWebScraper
 ### Introduction:
-The Instagram Scraper Application is a robust tool designed using the KivyMD framework in combination with Selenium's web scraping capabilities. This application is dedicated to helping users extract specific information from Instagram profiles based on a defined date range. The extracted data can then be exported into a CSV file. Furthermore, the tool offers an optional filtering capability where users can target posts containing specific hashtags.
+The Instagram Scraper Application is a tool designed using the KivyMD framework in combination with Selenium's web scraping capabilities. This application is dedicated to helping users extract specific information from Instagram profiles based on a defined date range. The extracted data can then be exported into a CSV file. Furthermore, the tool offers an optional filtering capability where users can target posts containing specific hashtags.
 
 The codebase is divided into two files:
 1. main.py (Extract Data without using Proxy)
