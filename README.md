@@ -48,10 +48,9 @@ Inside the 'scrape_data()' method
 
 4.1 The application sets up a Chrome WebDriver instance.
 Users must have ChromeDriver installed on their local machine. After installation, they need to point the directory path of ChromDriver in the code. Two option are available for this confoguration:
-       -  Local directory path  Chromedriver_path = r"C:\Users\bruker1\Downloads\chromedriver_win32\chromedriver.exe"
-       -  Remote Selenium Chrome Driver: driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
-                                  options=chrome_options,
-                                  seleniumwire_options=options)
+    -  Local directory path  Chromedriver_path = r"C:\Users\bruker1\Downloads\chromedriver_win32\chromedriver.exe"
+    -  Remote Selenium Chrome Driver: driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
+                                  options=chrome_options)
                                   
 4.2 Fetch the instagram page of the provide username.
 This involves using the WebDriver instance to navigate to the specific Instagram page URL associated with the username
@@ -90,7 +89,8 @@ if __name__ == "__main__":
 
 ### Important Notes:
 1. Instagram endpoint query: Initially, we used the endpoint 'https://instagram.com/{username}/?__a=1&__d=dis' to fetch data.
-However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page.
+However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page, api_url = f'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={{"id":"{user_id}","first":50,"after":"{end_cursor}"}}'.
+.
 We then iteratively made request to the API, continuing our scraping until we covered all available pages for our desired date range.
 2. Extraction speed: The speed at which data is extracted largely depends on the internet traffic and concurrency at the given time.
 3. Data Collection: To gather comprehensive data, we utilized another Instagram query. This helps us populate the table with the following fields:
