@@ -145,7 +145,7 @@ However, the JSON response from this query only allows scraping of 12 posts. To 
 
 ### Getting start
 1. You can simply update the proxy settings in the options dictionary.
-2. Ensure your proxy provider is compatible set the necessary configurations.
+2. Ensure your proxy provider is compatible set the necessary configurations and it's advisable to use proxies that offer unlimited requests.
 
 ### Important Notes
 1. Performance: Using a proxy might slow down the execution time compared to 'main.py'.
