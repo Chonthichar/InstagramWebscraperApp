@@ -18,6 +18,10 @@ The codebase is divided into two files:
 5. Click the "start_button" to begin the scraping process.
 6. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
+### How to install:
+- Installing from source
+  `https://github.com/Chonthichar/InstagramWebscraperLastVersion.git`
+
 ## main.py (Extract Data without using Proxy)
 
 ### Code Structure:
