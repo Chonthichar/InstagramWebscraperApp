@@ -42,12 +42,13 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 2. Execute the command within your Python environment. A KivyMD window will appear on your display.
 <img src="./assets/Screenshot 2023-08-16 190941.png" alt="Alt text" title="Optional title">
 3. Input the instagram username you want to scrape in the "username_input" field.
+<img src="./assets/Screenshot 2023-08-16 191056.png" alt="Alt text" title="Optional title">
 4. Select the desired "start_date" and "end_date"
 5. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
 6. Click the "start_button" to begin the scraping process.
 7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
+<img src="./assets/Screenshot 2023-08-16 191201.png" alt="Alt text" title="Optional title">
 
-<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Alt text" title="Optional title">
 
 ## main.py (Extract Data without using Proxy)
 
