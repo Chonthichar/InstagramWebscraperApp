@@ -7,17 +7,17 @@ The codebase is divided into two files:
 
 ## main.py (Extract Data without using Proxy)
 
-Prerequisites:
+### Prerequisites:
 1. Python environment.
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
 3. Ensure Chrome driver is available and its path is correctly set in the code.
 
-Code Structure:
-1. Imports:
+### Code Structure:
+#### 1. Imports:
 Make sure you have all the required packages installed. THe code assumes you've imported listed libary including
 Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
 
-2. InstagramScraperApp:
+#### 2. InstagramScraperApp:
 "InstagramScraperApp" is a main application class that inherits from "MDApp", a part of the kivy framework, Utilizes Kivy and MDAppfor a user friendly interface.
 
 - Attributes:
@@ -30,7 +30,7 @@ Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
     - 'scrape_data(*args)': Responsible for the actual scraping of Instagram data.
     - 'on_start()': Initializes certain values when the app starts.
 
-3. Inside the 'build()' method, various UI elements are defined:
+#### 3. Inside the 'build()' method, various UI elements are defined:
 - Input Fields:
     - 'username_input': Input field for entering the Instagram username.
     - 'start_date_input' and 'end_date_input': Date input fields.
@@ -43,7 +43,7 @@ Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
     -'spinner': KivyMD loading spinner that shows while scraping is in progress.
 
 
-4. Scraping Logic:
+#### 4. Scraping Logic:
 Inside the 'scrape_data()' method
 4.1 The application sets up a Chrome WebDriver instance.
 Users must have ChromeDriver installed on their local machine. After installation, they need to point the directory path of ChromDriver in the code. Two option are available for this confoguration:
@@ -72,13 +72,13 @@ This approach speed up data extraction, especially when dealing with profiles th
 - After data is extracted, it's organized and stored in a Pandas DataFrame which provide a structured way to store tabular data, making it easy to analyze, and sort data.
 - After populating the DataFrame, the program writes this data to a CSV(Comma-Separated Values) file.
 
-5. Starting the Application:
+### 5. Starting the Application:
 The application is initialized and run through the main entry point:
 if __name__ == "__main__":
     InstagramScraperApp().run()
 
 
-How to use:
+### How to use:
 1. Make sure you have installed all the required packages.
 2. Input the instagram username you want to scrape in the "username_input" field.
 3. Select the desired "start_date" and "end_date"
@@ -86,7 +86,7 @@ How to use:
 5. Click the "start_button" to begin the scraping process.
 6. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
-Important Notes:
+### Important Notes:
 1. Instagram endpoint query: Initially, we used the endpoint 'https://instagram.com/{username}/?__a=1&__d=dis' to fetch data.
 However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page.
 We then iteratively made request to the API, continuing our scraping until we covered all available pages for our desired date range.
@@ -102,7 +102,7 @@ We then iteratively made request to the API, continuing our scraping until we co
 5. Large Data Set: The code might experience extended processing times when scraping data from over 10,000 posts, or it could potentially malfunction toward the end.
 6. Proxy usage: The code is capable of scraping data without utilizing a proxy. However, there maybe instances when scraping is disrupted because Instagram detects and tracks your activity.
 
-Troubleshooting
+### Troubleshooting
 1. Failed to Scrape User ID: Ensure Instagram's structure hasn't been updated. If it has the code might need an update.
 2. Slowed Performance with large data sets: Consider scraping data in smaller batches or optimizing the code further for better performance.
 3. Consider switching to a different WIFI network or using a VPN if you encounter the error : Please wait a few minutes before you try again' or 'Failed to retrieve user ID or username'.
@@ -110,15 +110,15 @@ Troubleshooting
 
 ## main_proxy.py (Extract Data using Proxy)
 
-Overview
+### Overview
 'main_proxy.py' allows for the extraction of Instagram data with the added benefit of using proxies. The implementation is much the same as
 'main.py', but with proxy support for better privacy and to counter potential blocking by Instagram.
 
-Getting start
+### Getting start
 1. You can simply update the proxy settings in the options dictionary.
 2. Ensure your proxy provider is compatible set the necessary configurations.
 
-Important Notes
+### Important Notes
 1. Performance: Using a proxy might slow down the execution time compared to 'main.py'.
 2. Proxy implementation: The proxy is integrated at three key points where requests are made to Instagram.
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
