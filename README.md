@@ -24,7 +24,7 @@ Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
     - 'username': Input the Instagram username to scrape.
     - 'search_hashtags': Input the hashtags of that user to scrape post base on that hashtags.
     - 'start_date': The start date for scraping.
-    - 'end_date': THe end date for scraping.
+    - 'end_date': The end date for scraping.
 - Methods:
     - 'build()': Set up the main GUI for an application
     - 'scrape_data(*args)': Responsible for the actual scraping of Instagram data.
@@ -45,12 +45,14 @@ Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
 
 #### 4. Scraping Logic:
 Inside the 'scrape_data()' method
+
 4.1 The application sets up a Chrome WebDriver instance.
 Users must have ChromeDriver installed on their local machine. After installation, they need to point the directory path of ChromDriver in the code. Two option are available for this confoguration:
        -  Local directory path  Chromedriver_path = r"C:\Users\bruker1\Downloads\chromedriver_win32\chromedriver.exe"
        -  Remote Selenium Chrome Driver: driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
                                   options=chrome_options,
                                   seleniumwire_options=options)
+                                  
 4.2 Fetch the instagram page of the provide username.
 This involves using the WebDriver instance to navigate to the specific Instagram page URL associated with the username
 provided by the user. The code accomplishes by appending the username to the base Instagram profile URL
