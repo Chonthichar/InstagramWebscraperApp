@@ -152,9 +152,7 @@ We then iteratively made request to the API, continuing our scraping until we co
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
 
 
-Example of the output :
-
-<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Execute the command within your Python environment. A KivyMD window will appear on your display" title="Execute the command within your Python environmen" style="display: inline-block; margin: 0 auto; max-width: 200px">
+## The output after the code is executed:
 
 <img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the 'username_input' field" title="Input the instagram username you want to scrape in the 'username_input' field" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
