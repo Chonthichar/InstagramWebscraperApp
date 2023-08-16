@@ -1,24 +1,27 @@
 # InstagramWebScraper
 ### Introduction:
-This KivyMD Application along with selenium web scrper liberlies allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
+The Instagram Scraper Application is a robust tool designed using the KivyMD framework in combination with Selenium's web scraping capabilities. This application is dedicated to helping users extract specific information from Instagram profiles based on a defined date range. The extracted data can then be exported into a CSV file. Furthermore, the tool offers an optional filtering capability where users can target posts containing specific hashtags.
+
 The codebase is divided into two files:
 1. main.py (Extract Data without using Proxy)
 2. main_proxy.py (Extract Data using Proxy)
+
+To get started with the Instagram Scraper Application, simply run the script, and the intuitive GUI will guide you through the scraping process.
 
 ### Prerequisites:
 1. Python environment.
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
 3. Ensure Chrome driver is available and its path is correctly set in the code.
 
-### How to install packages:
+### Install packages:
 - Installing from source
   `https://github.com/Chonthichar/InstagramWebscraperLastVersion.git`
   
 - Installing Kivy
-  `pip install pandas`
+  `pip install kivy`
   
 - Installing KivyMD
-  `pip install kivy kivymd`
+  `pip install kivymd`
   
 - Installing request
   `pip install requests`
@@ -152,11 +155,14 @@ We then iteratively made request to the API, continuing our scraping until we co
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
 
 
-## The output after the code is executed:
+## Results Upon Execution:
+
 
 <img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the 'username_input' field" title="Input the instagram username you want to scrape in the 'username_input' field" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
+
 <img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
+
 
 ## Reference
 Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
