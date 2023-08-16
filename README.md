@@ -167,6 +167,7 @@ Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
 https://proxyway.com/guides/how-to-scrape-instagram.
 
 "How to Scrape Instagram".ScrapFly. May 17, 2022
-https://scrapfly.io/blog/how-to-scrape-instagram/
+https://scrapfly.io/blog/how-to-scrape-instagram.
+
 "Instagram ?__a=1 url not working anymore & problems with graphql/query to get data". April 12, 2018
 https://stackoverflow.com/questions/49265339/instagram-a-1-url-not-working-anymore-problems-with-graphql-query-to-get-da
