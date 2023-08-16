@@ -1,4 +1,4 @@
-# InstagramWebscraper
+<img width="686" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/e251ef50-3de4-4dc5-b172-be2d15179fce"># InstagramWebscraper
 
 This KivyMD Application allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
 The codebase is divided into two files:
@@ -10,17 +10,43 @@ The codebase is divided into two files:
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
 3. Ensure Chrome driver is available and its path is correctly set in the code.
 
-### How to use:
-1. Make sure you have installed all the required packages.
-2. Input the instagram username you want to scrape in the "username_input" field.
-3. Select the desired "start_date" and "end_date"
-4. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
-5. Click the "start_button" to begin the scraping process.
-6. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
-
-### How to install:
+### How to install packages:
 - Installing from source
   `https://github.com/Chonthichar/InstagramWebscraperLastVersion.git`
+  
+- Installing Kivy
+  `pip install pandas`
+  
+- Installing KivyMD
+  `pip install kivy kivymd`
+  
+- Installing request
+  `pip install requests`
+  
+- Installing selenium
+  `pip install selenium`
+
+- Installing selenium wire
+  `pip install selenium-wire`
+
+- Installing webdriver manager
+  `pip install webdriver_manager`
+  
+- Installing Pandas
+  `pip install pandas`
+
+Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Python Standard Library.
+
+### How to use:
+1. Make sure you have installed all the required packages.
+2. Execute the command within your Python environment. A KivyMD window will appear on your display.
+3. Input the instagram username you want to scrape in the "username_input" field.
+4. Select the desired "start_date" and "end_date"
+5. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
+6. Click the "start_button" to begin the scraping process.
+7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
+
+![](<img width="686" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/7dcc144d-b3db-443b-962e-9cf3b2056360">)
 
 ## main.py (Extract Data without using Proxy)
 
