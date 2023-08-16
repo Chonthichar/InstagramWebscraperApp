@@ -6,8 +6,6 @@ The codebase is divided into two files:
 1. main.py (Extract Data without using Proxy)
 2. main_proxy.py (Extract Data using Proxy)
 
-To get started with the Instagram Scraper Application, simply run the script, and the intuitive GUI will guide you through the scraping process.
-
 ### Prerequisites:
 1. Python environment.
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
@@ -152,6 +150,8 @@ However, the JSON response from this query only allows scraping of 12 posts. To 
 2. Proxy implementation: The proxy is integrated at three key points where requests are made to Instagram.
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
 
+
+To get started with the Instagram Scraper Application, simply run the script, and the intuitive GUI will guide you through the scraping process.
 
 ## Results Upon Execution:
 
