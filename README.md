@@ -1,4 +1,4 @@
-<img width="686" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/e251ef50-3de4-4dc5-b172-be2d15179fce"># InstagramWebscraper
+
 
 This KivyMD Application allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
 The codebase is divided into two files:
@@ -46,7 +46,14 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 6. Click the "start_button" to begin the scraping process.
 7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
-![](<img width="686" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/7dcc144d-b3db-443b-962e-9cf3b2056360">)
+![](<img width="686" alt="image" src="<img width="682" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/2abb0493-e04a-446b-a882-30f767d6d465">
+">)
+
+![](<img width="599" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/9556fd02-d685-4877-a1dc-2bc40f4a20be">
+)
+
+![](<img width="944" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/3050c0b9-a8a8-41f6-ac0c-9db00e0ba123">
+)
 
 ## main.py (Extract Data without using Proxy)
 
@@ -118,12 +125,12 @@ if __name__ == "__main__":
 
 
 ### Important Notes:
-1. Instagram endpoint query: Initially, we used the endpoint 'https://instagram.com/{username}/?__a=1&__d=dis' to fetch data.
-However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page, api_url = f'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={{"id":"{user_id}","first":50,"after":"{end_cursor}"}}'.
+1. Instagram endpoint query: Initially, we used the endpoint `https://instagram.com/{username}/?__a=1&__d=dis` to fetch data.
+However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page, `api_url = f'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={{"id":"{user_id}","first":50,"after":"{end_cursor}"}}'.`
 .
 We then iteratively made request to the API, continuing our scraping until we covered all available pages for our desired date range.
 2. Extraction speed: The speed at which data is extracted largely depends on the internet traffic and concurrency at the given time.
-3. Data Collection: To gather comprehensive data, we utilized another Instagram query, 'https://instagram.com/{username}/?__a=1&__d=dis'. This helps us populate the table with the following fields:
+3. Data Collection: To gather comprehensive data, we utilized another Instagram query, `https://instagram.com/{username}/?__a=1&__d=dis`. This helps us populate the table with the following fields:
     - 'Username': which holds the username.
     - 'Name': for the account name.
     - 'Category': to specify the category of the account.
@@ -154,3 +161,12 @@ We then iteratively made request to the API, continuing our scraping until we co
 1. Performance: Using a proxy might slow down the execution time compared to 'main.py'.
 2. Proxy implementation: The proxy is integrated at three key points where requests are made to Instagram.
 3. Rotating Proxy: It is recommend to use rotating proxies to ensure Instagram doesn't detect and block your activities.
+
+## Reference
+Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
+https://proxyway.com/guides/how-to-scrape-instagram.
+
+"How to Scrape Instagram".ScrapFly. May 17, 2022
+https://scrapfly.io/blog/how-to-scrape-instagram/
+"Instagram ?__a=1 url not working anymore & problems with graphql/query to get data". April 12, 2018
+https://stackoverflow.com/questions/49265339/instagram-a-1-url-not-working-anymore-problems-with-graphql-query-to-get-da
