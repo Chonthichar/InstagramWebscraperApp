@@ -170,11 +170,11 @@ To get started with the Instagram Scraper Application, simply run the script, an
 
 
 
-## Final thought, Deployment strategy and Real-world Application of the project:
+## Final thought and Real-world Application of the project:
 The Project, at its core, leverages the Selenium ChromeDriver for web scraping. This enable it to programmatically interact with web pages, specifically Instagram in this context, to extract valuable data. A viable forward would be to package the application as a standlone `.exe` file, offering a simplified transition from developmental code to a tangible application. Furthermore, This can be ensures that even non-tech-savvy users can easily install and run the application without needing to deal with complex setups.
 
 
-## Reference
+## References
 Isabel Rivera. "How to scrape Instatgram"Proxyway. October 7, 2022
 https://proxyway.com/guides/how-to-scrape-instagram.
 
