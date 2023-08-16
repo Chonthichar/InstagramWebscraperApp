@@ -5,12 +5,12 @@ The codebase is divided into two files:
 1. main.py (Extract Data without using Proxy)
 2. main_proxy.py (Extract Data using Proxy)
 
-## main.py (Extract Data without using Proxy)
-
 ### Prerequisites:
 1. Python environment.
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
 3. Ensure Chrome driver is available and its path is correctly set in the code.
+
+## main.py (Extract Data without using Proxy)
 
 ### Code Structure:
 #### 1. Imports:
