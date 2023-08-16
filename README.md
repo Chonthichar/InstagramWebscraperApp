@@ -53,7 +53,7 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 
 ### Code Structure:
 #### 1. Imports:
-Make sure you have all the required packages installed. THe code assumes you've imported listed libary including
+Make sure you have all the required packages installed. The code assumes you've imported listed libary including
 Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
 
 #### 2. InstagramScraperApp:
@@ -87,7 +87,7 @@ Inside the 'scrape_data()' method
 
 4.1 The application sets up a Chrome WebDriver instance.
 Users must have ChromeDriver installed on their local machine. After installation, they need to point the directory path of ChromDriver in the code. Two option are available for this confoguration:
--  Local directory path  Chromedriver_path = r"C:\Users\bruker1\Downloads\chromedriver_win32\chromedriver.exe"
+-  Local directory path  Chromedriver_path = r"C:\Users\chromedriver_win32\chromedriver.exe"
 -  Remote Selenium Chrome Driver: driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()),
                                   options=chrome_options)
                                   
@@ -114,15 +114,13 @@ This approach speed up data extraction, especially when dealing with profiles th
 
 ### 5. Starting the Application:
 The application is initialized and run through the main entry point:
-if __name__ == "__main__":
-    InstagramScraperApp().run()
+`if __name__ == "__main__":
+    InstagramScraperApp().run()`
 
 
 ### Important Notes:
 1. Instagram endpoint query: Initially, we used the endpoint `https://instagram.com/{username}/?__a=1&__d=dis` to fetch data.
-However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page, `api_url = f'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={{"id":"{user_id}","first":50,"after":"{end_cursor}"}}'.`
-.
-We then iteratively made request to the API, continuing our scraping until we covered all available pages for our desired date range.
+However, the JSON response from this query only allows scraping of 12 posts. To overcome this limitation, we switched to the Instagram API endpoint, which lets us specify up to 50 posts per page, `api_url = f'https://www.instagram.com/graphql/query/?query_hash=42323d64886122307be10013ad2dcc44&variables={{"id":"{user_id}","first":50,"after":"{end_cursor}"}}'.` We then iteratively made request to the API, continuing our scraping until we covered all available pages for our desired date range.
 2. Extraction speed: The speed at which data is extracted largely depends on the internet traffic and concurrency at the given time.
 3. Data Collection: To gather comprehensive data, we utilized another Instagram query, `https://instagram.com/{username}/?__a=1&__d=dis`. This helps us populate the table with the following fields:
     - 'Username': which holds the username.
