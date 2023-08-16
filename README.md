@@ -1,6 +1,6 @@
-
-
-This KivyMD Application allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
+# InstagramWebScraper
+### Introduction:
+This KivyMD Application along with selenium web scrper liberlies allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
 The codebase is divided into two files:
 1. main.py (Extract Data without using Proxy)
 2. main_proxy.py (Extract Data using Proxy)
