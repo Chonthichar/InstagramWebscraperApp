@@ -163,10 +163,10 @@ To get started with the Instagram Scraper Application, simply run the script, an
 
 ## Outcome base on Hashtags execution:
 
-<img src="./assets/Screenshot 2023-08-17 001006.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
+<img src="./assets/Screenshot 2023-08-17 001006.png" alt="Input the instagram username you want to scrape in the 'username_input' and Hashtags field" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
 
-<img src="./assets/Screenshot 2023-08-17 001303.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
+<img src="./assets/Screenshot 2023-08-17 001303.png" alt="a CSV file will be automatically opened containing the scraped data of Hashtags" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 200px">
 
 
 
