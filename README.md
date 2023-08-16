@@ -47,11 +47,11 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
 
-<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Execute the command within your Python environment. A KivyMD window will appear on your display" title="Optional title" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img src="./assets/Screenshot 2023-08-16 190941.png" alt="Execute the command within your Python environment. A KivyMD window will appear on your display" title="Execute the command within your Python environmen" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-<img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the "username_input" fiel" title="Optional title" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img src="./assets/Screenshot 2023-08-16 191056.png" alt="Input the instagram username you want to scrape in the 'username_input' field" title="Input the instagram username you want to scrape in the 'username_input' field" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-<img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="Optional title" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img src="./assets/Screenshot 2023-08-16 191201.png" alt="a CSV file will be automatically opened containing the scraped data" title="a CSV file will be automatically opened containing the scraped data" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
 
