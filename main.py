@@ -152,12 +152,6 @@ BoxLayout:
         center_x: 1
         center_y: 1
 
-    # MDLabel:
-    #     text: " "
-    #     pos_hint: {"center_x": 0.55, "center_y": 20}
-    #     font_size: 30
-    #     text_size: root.width, None
-    #     size: self.texture_size
 
     MDLabel:
         text: "Scrape and download Instagram posts, profiles, hashtags, photos, comments. Download your data as CSV."
@@ -171,24 +165,6 @@ BoxLayout:
         height: "48dp"
         spacing: "16dp"
         padding: "16dp"
-
-        # MDTextField:
-        #     id: start_date
-        #     hint_text: "Start Date"
-        #     helper_text_mode: "on_focus"
-        #     icon_right: "calendar"
-        #     icon_right_color: app.theme_cls.primary_color
-        #     size_hint_x: None
-        #     width: "200dp"
-        # 
-        # MDTextField:
-        #     id: end_date
-        #     hint_text: "End Date"
-        #     helper_text_mode: "on_focus"
-        #     icon_right: "calendar"
-        #     icon_right_color: app.theme_cls.primary_color
-        #     size_hint_x: None
-        #     width: "200dp"
 '''
 
 
