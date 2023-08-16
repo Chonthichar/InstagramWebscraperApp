@@ -94,7 +94,7 @@ Users must have ChromeDriver installed on their local machine. After installatio
 4.2 Fetch the instagram page of the provide username.
 This involves using the WebDriver instance to navigate to the specific Instagram page URL associated with the username
 provided by the user. The code accomplishes by appending the username to the base Instagram profile URL
-(https://www.instagram.com/{username}).
+`(https://www.instagram.com/{username})`.
 
 4.3 Using regular expression to extract user data:
 - Once input the user's Instagram username. ChromeDriver will redirected to user's Instagram page, the application reads the page source which is essentially the raw HTML content of the page.
