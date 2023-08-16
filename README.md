@@ -10,6 +10,14 @@ The codebase is divided into two files:
 2. Necessary libraries installed(e.g., Kivy, requests, pandas).
 3. Ensure Chrome driver is available and its path is correctly set in the code.
 
+### How to use:
+1. Make sure you have installed all the required packages.
+2. Input the instagram username you want to scrape in the "username_input" field.
+3. Select the desired "start_date" and "end_date"
+4. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
+5. Click the "start_button" to begin the scraping process.
+6. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
+
 ## main.py (Extract Data without using Proxy)
 
 ### Code Structure:
@@ -78,14 +86,6 @@ The application is initialized and run through the main entry point:
 if __name__ == "__main__":
     InstagramScraperApp().run()
 
-
-### How to use:
-1. Make sure you have installed all the required packages.
-2. Input the instagram username you want to scrape in the "username_input" field.
-3. Select the desired "start_date" and "end_date"
-4. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
-5. Click the "start_button" to begin the scraping process.
-6. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
 ### Important Notes:
 1. Instagram endpoint query: Initially, we used the endpoint 'https://instagram.com/{username}/?__a=1&__d=dis' to fetch data.
