@@ -1,4 +1,4 @@
-## InstagramWebscraper
+# InstagramWebscraper
 
 This KivyMD Application allows user to scrape specific data from Instagram profiles with in a specific date range and save it to a CSV file and, optionally, containing certain hashtags.
 The codebase is divided into two files:
@@ -108,8 +108,7 @@ Troubleshooting
 3. Consider switching to a different WIFI network or using a VPN if you encounter the error : Please wait a few minutes before you try again' or 'Failed to retrieve user ID or username'.
 
 
-
-main_proxy.py (Extract Data using Proxy)
+## main_proxy.py (Extract Data using Proxy)
 
 Overview
 'main_proxy.py' allows for the extraction of Instagram data with the added benefit of using proxies. The implementation is much the same as
