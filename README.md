@@ -38,8 +38,8 @@ Kivy,KivyMD, Web scraping tools like selenium and relevant libraries.
 - Button and Labels:
     - 'start_button': Button to start scraping process.
     - 'date_label': Label to display messages to the user.
-    - 'execution_time_label': Label to display hw long the scraping took.
--Others:
+    - 'execution_time_label': Label to display how long the scraping took.
+- Others:
     -'spinner': KivyMD loading spinner that shows while scraping is in progress.
 
 
