@@ -40,17 +40,16 @@ Note: `json`, `re`, `asyncio`, `time`, `datetime`, `subprocess` part of the Pyth
 ### How to use:
 1. Make sure you have installed all the required packages.
 2. Execute the command within your Python environment. A KivyMD window will appear on your display.
-3. Input the instagram username you want to scrape in the "username_input" field.
-4. Select the desired "start_date" and "end_date"
-5. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
-6. Click the "start_button" to begin the scraping process.
-7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
-
 ![](<img width="686" alt="image" src="<img width="682" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/2abb0493-e04a-446b-a882-30f767d6d465">
 ">)
 
+3. Input the instagram username you want to scrape in the "username_input" field.
+4. Select the desired "start_date" and "end_date"
+5. (Optional) Enter any specific hashtags you want to filter by in the "search_field".
 ![](<img width="599" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/9556fd02-d685-4877-a1dc-2bc40f4a20be">
 )
+6. Click the "start_button" to begin the scraping process.
+7. Once the scraping is complete, a CSV file will be automatically opened containing the scraped data.
 
 ![](<img width="944" alt="image" src="https://github.com/Chonthichar/InstagramWebscraperLastVersion/assets/84187224/3050c0b9-a8a8-41f6-ac0c-9db00e0ba123">
 )
